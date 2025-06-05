@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { Mail, MapPin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -22,10 +22,6 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-playfair mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex items-center">
-                <Phone className="mr-2 text-gold-400" size={18} />
-                <span className="text-gray-300">+355 69 604 7159</span>
-              </div>
               <div className="flex items-center">
                 <Mail className="mr-2 text-gold-400" size={18} />
                 <span className="text-gray-300">info@classyachts.eu</span>

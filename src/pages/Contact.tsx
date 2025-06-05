@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Mail, Phone, Instagram, MessageSquare, Crown, Anchor, Waves, Star } from 'lucide-react';
+import { Mail, Instagram, MessageSquare, Crown, Anchor, Waves, Star } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -239,29 +239,7 @@ const Contact: React.FC = () => {
                   variants={scaleIn}
                   className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/20 shadow-2xl"
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <motion.div 
-                      className="flex items-start space-x-4 group"
-                      whileHover={{ scale: 1.02 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <motion.div 
-                        className="bg-gradient-to-br from-gold-500/30 to-gold-600/20 rounded-full p-4 group-hover:from-gold-400/40 group-hover:to-gold-500/30 transition-all duration-300"
-                        whileHover={{ rotate: 5 }}
-                      >
-                        <Phone className="text-gold-400 w-6 h-6" />
-                      </motion.div>
-                    <div>
-                        <h4 className="text-lg font-semibold text-white mb-2">Phone</h4>
-                        <a 
-                          href="tel:+35569604715​9" 
-                          className="text-gold-400 hover:text-gold-300 transition-colors text-lg font-medium"
-                        >
-                          +355 69 604 7159
-                        </a>
-                      </div>
-                    </motion.div>
-                    
+                  <div className="flex justify-center">
                     <motion.div 
                       className="flex items-start space-x-4 group"
                       whileHover={{ scale: 1.02 }}

@@ -4,7 +4,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { 
   ChevronRight, Map, Anchor, Ship, Award, Calendar, Users, Maximize, 
   ExternalLink, Gauge, Star, Check, Globe, ArrowRight, ArrowDown, 
-  Mail, Phone, Sparkles, Shield, Sailboat, Wind, ChevronDown, Trophy, Book
+  Mail, Sparkles, Shield, Sailboat, Wind, ChevronDown, Trophy, Book
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -580,12 +580,6 @@ const ShipyardPage: React.FC = () => {
                         <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
                         <a href="mailto:info@vistaoasis.com" className="text-blue-100 hover:text-gold-400 transition-colors text-sm sm:text-base">
                           info@vistaoasis.com
-                        </a>
-                      </div>
-                      <div className="flex items-center">
-                        <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
-                        <a href="tel:+18001234567" className="text-blue-100 hover:text-gold-400 transition-colors text-sm sm:text-base">
-                          
                         </a>
                       </div>
                     </div>
