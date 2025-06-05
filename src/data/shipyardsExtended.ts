@@ -1007,10 +1007,10 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
   },
   "maori": {
     name: "MAORI Yachts",
-    logo: "https://images.unsplash.com/photo-1579088896013-fe3180c9476d?auto=format&fit=crop&w=2070&q=80",
+    logo: "/M54-Family-1.jpg",
     description: "Creators of luxury tender yachts with distinctive Italian styling and performance.",
     fullDescription: "MAORI Yachts combines Italian craftsmanship with innovative design to create distinctive luxury tenders that deliver both exceptional performance and elegant styling. Each MAORI vessel is meticulously crafted using advanced composite construction techniques, ensuring both lightweight performance and structural integrity.",
-    featuredImage: "https://images.unsplash.com/photo-1579088896013-fe3180c9476d?auto=format&fit=crop&w=2070&q=80",
+    featuredImage: "/M54-Family-1.jpg",
     established: "2008",
     location: "Italy",
     headquarters: "Italy",
@@ -1028,11 +1028,11 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       "Excellence in Yacht Engineering"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1579088896013-fe3180c9476d?auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=2071&q=80",
-      "https://images.unsplash.com/photo-1575986711002-b1e7452c8b17?auto=format&fit=crop&w=2073&q=80",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=2069&q=80"
+      "/M54-Family-1.jpg",
+      "/M54-Family-2.jpg",
+      "/M54-XL-1.jpg",
+      "/M54-XL-2.jpg",
+      "/M46-inboud1.jpg"
     ],
     story: "MAORI Yachts emerged from a passion for combining the elegance of Italian design with cutting-edge marine engineering. Founded with a vision to create distinctive luxury tenders that stand out in both form and function, MAORI has established a reputation for crafting vessels that serve as both practical tenders and statement pieces for discerning yacht owners.\n\nEach MAORI yacht is built using advanced vacuum infusion techniques and premium composite materials, ensuring an optimal balance of structural integrity, performance, and weight. The brand's distinctive aesthetic combines clean, flowing lines with practical features and innovative solutions, creating vessels that are as versatile as they are beautiful.",
     values: [
@@ -1066,7 +1066,7 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       {
         id: 'maori-54-family',
         name: 'MAORI 54 Family',
-        thumbnail: '/models/maori/maori-54-family.jpg',
+        thumbnail: '/M54-Family-4.jpg',
         shortDesc: 'A 16.5-meter luxury tender that combines extraordinary performance with refined family comfort, capable of reaching speeds up to 50 knots.',
         fullDesc: 'The MAORI 54 Family represents the perfect balance between high-performance capabilities and family-oriented luxury. This 16.5-meter vessel is meticulously crafted using advanced vacuum infusion techniques with a combination of sandwich and single-skin composite construction, ensuring optimal structural integrity while maintaining a lightweight profile. Powered by twin MAN 850 hp engines with JDM surface propellers, the MAORI 54 Family delivers exceptional performance with a maximum speed of 50 knots and a comfortable cruising speed of 38 knots. With ample space for up to 14 passengers, generous fuel capacity of 2,200 liters, and premium amenities throughout, this vessel is designed for extended family adventures without compromising on the distinctive MAORI styling and engineering excellence.',
         specs: {
@@ -1085,11 +1085,11 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
           crew: 0
         },
         gallery: [
-          '/models/maori/maori-54-family-1.jpg',
-          '/models/maori/maori-54-family-2.jpg',
-          '/models/maori/maori-54-family-3.jpg',
-          '/models/maori/maori-54-family-4.jpg',
-          '/models/maori/maori-54-family-5.jpg',
+          '/M54-Family-1.jpg',
+          '/M54-Family-2.jpg',
+          '/M54-Family-3.jpg',
+          '/M54-Family-4.jpg',
+          '/M54-Family-5.jpg',
           '/M54-Family-6.jpg',
           '/M54-Family-7.jpg'
         ],
@@ -1160,7 +1160,7 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       {
         id: 'maori-54-xl',
         name: 'MAORI 54 XL',
-        thumbnail: '/models/maori/maori-54-xl.jpg',
+        thumbnail: '/M54-XL-4.jpg',
         shortDesc: 'An extended version of the MAORI 54 with additional living space and luxury features, combining high performance with sophisticated styling.',
         fullDesc: 'The MAORI 54 XL represents the evolution of the acclaimed 54-foot platform with extended amenities and additional luxury features. This 16.5-meter vessel maintains the exceptional performance characteristics of the standard model while offering enhanced comfort and living space. Meticulously crafted using advanced vacuum infusion techniques with a combination of sandwich and single-skin composite construction, the MAORI 54 XL ensures optimal structural integrity and a lightweight profile. Powered by twin MAN 850 hp engines with JDM surface propellers, it delivers an impressive maximum speed of 50 knots and a comfortable cruising speed of 38 knots. With a generous fuel capacity of 2,000 liters and fresh water capacity of 400 liters, this vessel is designed for extended journeys with ultimate comfort, accommodating up to 12 passengers with the distinctive MAORI styling and superior Italian craftsmanship.',
         specs: {
@@ -1179,13 +1179,12 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
           crew: 0
         },
         gallery: [
-          '/models/maori/maori-54-xl-1.jpg',
-          '/models/maori/maori-54-xl-2.jpg',
-          '/models/maori/maori-54-xl-3.jpg',
-          '/models/maori/maori-54-xl-4.jpg',
-          '/models/maori/maori-54-xl-5.jpg',
+          '/M54-XL-1.jpg',
+          '/M54-XL-2.jpg',
+          '/M54-XL-3.jpg',
+          '/M54-XL-4.jpg',
+          '/M54-XL-5.jpg',
           '/M54-XL-6.jpg',
-          '/M54-XL-7.jpg',
           '/M54-XL-8.jpg',
           '/M54-XL-9.jpg'
         ],
@@ -1259,7 +1258,7 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       {
         id: 'maori-46-inboard',
         name: 'MAORI 46 Inboard',
-        thumbnail: '/models/maori/maori-46-inboard.jpg',
+        thumbnail: '/M46-inboud1.jpg',
         shortDesc: 'An elegant 14.2-meter day cruiser with inboard engine configuration, delivering exceptional performance with a top speed of 48 knots.',
         fullDesc: 'The MAORI 46 Inboard combines Italian design excellence with exceptional performance in a perfectly proportioned 14.2-meter package. This sophisticated day cruiser features twin Volvo 725hp inboard engines, delivering an impressive maximum speed of 48 knots and a comfortable cruising speed of 38 knots. Meticulously crafted using advanced vacuum infusion techniques with both sandwich and single-skin composite construction, the MAORI 46 ensures optimal structural integrity while maintaining a refined profile. With a generous fuel capacity of 2,000 liters and fresh water capacity of 400 liters, this vessel is designed for extended day cruising with up to 12 passengers. The MAORI 46 Inboard exemplifies the brand\'s commitment to combining high performance with elegant styling, creating a luxurious yet dynamic experience on the water.',
         specs: {
@@ -1278,11 +1277,6 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
           crew: 0
         },
         gallery: [
-          '/models/maori/maori-46-inboard-1.jpg',
-          '/models/maori/maori-46-inboard-2.jpg',
-          '/models/maori/maori-46-inboard-3.jpg',
-          '/models/maori/maori-46-inboard-4.jpg',
-          '/models/maori/maori-46-inboard-5.jpg',
           '/M46-inboud1.jpg',
           '/M46-inbound2.jpg',
           '/M46-inbound3.jpg',
