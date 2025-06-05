@@ -36,13 +36,14 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-navy-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Class Yachts. All rights reserved.
-            </p>
+            <div className="text-gray-400 mb-4 md:mb-0">
+              <p>© {new Date().getFullYear()} Class Yachts. All rights reserved.</p>
+              <p className="text-sm mt-1">Designed by <a href="https://netech-360.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors">netech-360.com</a></p>
+            </div>
             <div className="flex space-x-4">
-              <Link to="/privacy" className="text-gray-400 hover:text-gold-400 text-sm">Privacy Policy</Link>
-              <Link to="/terms" className="text-gray-400 hover:text-gold-400 text-sm">Terms of Service</Link>
-              <Link to="/sitemap" className="text-gray-400 hover:text-gold-400 text-sm">Sitemap</Link>
+              <Link to="/privacy" className="text-gray-400 hover:text-gold-400 text-sm"></Link>
+              <Link to="/terms" className="text-gray-400 hover:text-gold-400 text-sm"></Link>
+              <Link to="/" className="text-gray-400 hover:text-gold-400 text-sm"></Link>
             </div>
           </div>
         </div>
