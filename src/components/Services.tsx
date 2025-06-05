@@ -83,7 +83,7 @@ const Services: React.FC = () => {
       title: "Luxury Charter",
       description: "Experience the ultimate in maritime luxury with our exclusive charter services. From intimate getaways to grand celebrations, we curate unforgettable journeys.",
       features: ["Premium Fleet", "Expert Crew", "Bespoke Itineraries", "24/7 Concierge"],
-      image: "/lekker 45-1.jpg",
+      image: "/LEKKER 45-1.jpg",
       gradient: "from-blue-600 to-navy-800"
     },
     {
@@ -99,7 +99,7 @@ const Services: React.FC = () => {
       title: "Custom Design",
       description: "Transform your vision into reality with our bespoke yacht design services. From concept to completion, we craft vessels that reflect your unique style.",
       features: ["Custom Design", "Premium Materials", "Expert Craftsmanship", "Project Management"],
-      image: "/lekker 45-4.jpg",
+      image: "/lekker-45-4.jpg",
       gradient: "from-purple-600 to-indigo-700"
     }
   ];
