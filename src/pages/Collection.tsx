@@ -224,27 +224,35 @@ const Collection: React.FC = () => {
       
       {/* Enhanced Hero Section */}
       <motion.div 
-        className="relative h-[70vh] min-h-[600px] w-full overflow-hidden"
+        className="relative h-[70vh] min-h-[600px] w-full overflow-hidden bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        {/* Parallax background */}
+        {/* Luxury Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
+          <div className="absolute top-20 left-20 w-40 h-40 bg-gold-400/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-32 h-32 bg-gold-400/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gold-400/5 rounded-full blur-2xl"></div>
+        </div>
+
+        {/* Parallax background image (optional overlay) */}
         <motion.div 
-          className="absolute inset-0 bg-cover bg-center will-change-transform"
+          className="absolute inset-0 bg-cover bg-center will-change-transform opacity-30"
           style={{ 
             backgroundImage: `url(/LEKKER 45-1.jpg)`,
             scale: isLoaded ? 1 : 1.1
           }}
           animate={{ 
             scale: isLoaded ? 1.05 : 1.1,
-            opacity: isLoaded ? 1 : 0
+            opacity: isLoaded ? 0.3 : 0
           }}
           transition={{ duration: 3, ease: "easeOut" }}
         />
         
         {/* Enhanced gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-900/60 via-navy-950/80 to-navy-950/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-navy-950/60 to-navy-950/80" />
         
         {/* Animated overlay patterns */}
         <motion.div
