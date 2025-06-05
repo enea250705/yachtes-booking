@@ -156,25 +156,25 @@ const RentalComingSoon: React.FC = () => {
               <span className="text-gold-400 font-medium"> Prepare for something extraordinary.</span>
             </motion.p>
           </motion.div>
-
+          
           {/* Premium Cards Grid */}
           <motion.div 
             variants={staggerContainer}
             className="grid gap-8 mb-20 max-w-4xl mx-auto"
           >
             {/* Main Charter Card */}
-            <motion.div 
-              variants={fadeInUp}
+              <motion.div
+                variants={fadeInUp}
               className="group"
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 300 }}
-            >
+              >
               <div className="relative p-10 bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-2xl rounded-3xl border border-gold-400/20 hover:border-gold-400/40 transition-all duration-500 overflow-hidden">
                 {/* Card background effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-gold-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Floating crown icon */}
-                <motion.div 
+                <motion.div
                   className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center"
                   animate={{ rotate: [0, 5, 0] }}
                   transition={{ duration: 4, repeat: Infinity }}
@@ -208,9 +208,9 @@ const RentalComingSoon: React.FC = () => {
                       >
                         <div className="w-2 h-2 bg-gold-400 rounded-full" />
                         <span className="text-gray-300">{feature}</span>
-                      </motion.div>
-                    ))}
-                  </div>
+              </motion.div>
+            ))}
+          </div>
                 </div>
               </div>
             </motion.div>

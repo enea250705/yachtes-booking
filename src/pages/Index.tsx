@@ -192,4 +192,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index; 
+export default Index;

@@ -251,7 +251,7 @@ const Contact: React.FC = () => {
                       >
                         <Phone className="text-gold-400 w-6 h-6" />
                       </motion.div>
-                      <div>
+                    <div>
                         <h4 className="text-lg font-semibold text-white mb-2">Phone</h4>
                         <a 
                           href="tel:+35569604715​9" 
@@ -297,7 +297,7 @@ const Contact: React.FC = () => {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <a 
+                    <a 
                         href="https://www.instagram.com/ry_class_yachts/" 
                         target="_blank"
                         rel="noopener noreferrer"
@@ -331,8 +331,8 @@ const Contact: React.FC = () => {
                         <Star className="text-gold-400 w-4 h-4" />
                         <span>White-Glove Service</span>
                       </div>
-                    </div>
                   </div>
+                </div>
                 </motion.div>
               </div>
             </motion.div>
