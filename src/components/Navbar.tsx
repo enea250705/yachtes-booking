@@ -365,15 +365,15 @@ const Navbar: React.FC = () => {
             </motion.div>
 
             {/* Main luxury mobile menu */}
-                <motion.div 
-              className="fixed top-0 right-0 h-full w-full max-w-md z-[70] overflow-hidden"
+            <motion.div 
+              className="fixed inset-0 z-[70] flex justify-end"
               variants={luxuryMobileMenuVariants}
-                            initial="hidden"
-                            animate="visible"
+              initial="hidden"
+              animate="visible"
               exit="hidden"
             >
               {/* Premium glass panel */}
-              <div className="relative h-full bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-3xl border-l border-white/20">
+              <div className="relative h-full w-full sm:w-96 bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-3xl border-l border-white/20 overflow-y-auto">
                 
                 {/* Luxury background effects */}
                 <div className="absolute inset-0 bg-gradient-to-br from-gold-500/10 via-transparent to-navy-500/10" />
@@ -393,65 +393,65 @@ const Navbar: React.FC = () => {
                   }}
                 />
 
-                {/* Content container */}
-                <div className="relative z-10 h-full flex flex-col p-8">
+                {/* Content container with proper padding and scrolling */}
+                <div className="relative z-10 min-h-full flex flex-col p-6 sm:p-8">
                   
                   {/* Luxury header */}
                   <motion.div 
-                    className="flex items-center justify-between mb-12"
+                    className="flex items-center justify-between mb-8 sm:mb-12 flex-shrink-0"
                     variants={luxuryItemVariants}
                   >
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-3 sm:space-x-4">
                       <motion.div 
-                        className="w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center shadow-lg shadow-gold-500/25"
+                        className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center shadow-lg shadow-gold-500/25"
                         animate={{ rotate: 360 }}
                         transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                         style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                       >
-                        <Sparkles className="w-6 h-6 text-white" style={{ margin: 'auto' }} />
+                        <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" style={{ margin: 'auto' }} />
                       </motion.div>
                       <div>
                         <motion.img 
                           src="/logoclass1.png" 
                           alt="Class Yachts Logo" 
-                          className="h-8 w-auto object-contain mb-1"
+                          className="h-6 sm:h-8 w-auto object-contain mb-1"
                           whileHover={{ scale: 1.05 }}
                           transition={{ duration: 0.3 }}
                         />
                         <p className="text-xs text-gold-300/80 tracking-wider uppercase leading-tight">Premium Vessels</p>
                       </div>
-                </div>
+                    </div>
                 
                     <motion.button
-                      className="p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300"
+                      className="p-2 sm:p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300"
                       onClick={() => setIsOpen(false)}
                       whileHover={{ scale: 1.05, rotate: 90 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <X className="w-6 h-6 text-white" />
+                      <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </motion.button>
                   </motion.div>
 
-                  {/* Premium navigation */}
-                  <motion.nav className="flex-1 mb-8">
-                    <div className="space-y-3">
+                  {/* Premium navigation with scrollable area */}
+                  <motion.nav className="flex-1 mb-6 sm:mb-8 overflow-y-auto">
+                    <div className="space-y-2 sm:space-y-3">
                       {navigation.map((item, index) => (
-                <motion.div 
+                        <motion.div 
                           key={item.name}
                           variants={luxuryItemVariants}
                           custom={index}
-                >
-                  <Link 
+                        >
+                          <Link 
                             to={item.href}
                             onClick={() => setIsOpen(false)}
-                            className={`group flex items-center space-x-4 p-4 rounded-2xl transition-all duration-500 ${
+                            className={`group flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 rounded-2xl transition-all duration-500 ${
                               location.pathname === item.href
                                 ? 'bg-gradient-to-r from-gold-500/20 to-gold-600/20 border border-gold-400/30 shadow-lg shadow-gold-500/10'
                                 : 'hover:bg-white/10 hover:border-white/20 border border-transparent'
                             }`}
                           >
                             <motion.div 
-                              className={`p-3 rounded-xl ${
+                              className={`p-2 sm:p-3 rounded-xl ${
                                 location.pathname === item.href
                                   ? 'bg-gradient-to-br from-gold-500 to-gold-600 text-white'
                                   : 'bg-white/10 text-gold-300 group-hover:bg-gold-500 group-hover:text-white'
@@ -461,7 +461,7 @@ const Navbar: React.FC = () => {
                               {item.icon}
                             </motion.div>
                             <div className="flex-1">
-                              <h3 className={`text-lg font-semibold transition-all duration-300 ${
+                              <h3 className={`text-base sm:text-lg font-semibold transition-all duration-300 ${
                                 location.pathname === item.href
                                   ? 'text-gold-300'
                                   : 'text-white group-hover:text-gold-300'
@@ -476,7 +476,7 @@ const Navbar: React.FC = () => {
                               animate={{ x: location.pathname === item.href ? [0, 5, 0] : 0 }}
                               transition={{ duration: 1.5, repeat: Infinity }}
                             >
-                              <ArrowRight className="w-5 h-5" />
+                              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                             </motion.div>
                           </Link>
                         </motion.div>
@@ -484,26 +484,26 @@ const Navbar: React.FC = () => {
                     </div>
                   </motion.nav>
 
-                  {/* Premium CTA and Social */}
-                  <motion.div variants={luxuryItemVariants}>
+                  {/* Premium CTA and Social - Fixed at bottom */}
+                  <motion.div variants={luxuryItemVariants} className="flex-shrink-0">
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="mb-6"
+                      className="mb-4 sm:mb-6"
                     >
                       <Button 
                         asChild
-                        className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-semibold py-4 rounded-2xl shadow-xl shadow-gold-500/25 border-0"
+                        className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-semibold py-3 sm:py-4 rounded-2xl shadow-xl shadow-gold-500/25 border-0"
                       >
                         <Link to="/contact" onClick={() => setIsOpen(false)}>
-                          <Crown className="w-5 h-5 mr-2" />
+                          <Crown className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                           Book Private Consultation
                         </Link>
                       </Button>
                     </motion.div>
                     
                     {/* Premium social links */}
-                    <div className="flex justify-center gap-4">
+                    <div className="flex justify-center gap-3 sm:gap-4">
                       {[
                         { icon: Instagram, href: 'https://instagram.com', color: 'from-pink-500 to-purple-500' }
                       ].map((social, index) => (
@@ -512,16 +512,16 @@ const Navbar: React.FC = () => {
                           href={social.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`w-12 h-12 bg-gradient-to-br ${social.color} rounded-2xl flex items-center justify-center text-white shadow-lg`}
+                          className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${social.color} rounded-2xl flex items-center justify-center text-white shadow-lg`}
                           whileHover={{ scale: 1.15, y: -3, rotate: 5 }}
                           whileTap={{ scale: 0.95 }}
                           transition={{ type: "spring", damping: 15, stiffness: 300 }}
                         >
-                          <social.icon className="w-5 h-5" />
+                          <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                         </motion.a>
                       ))}
                     </div>
-                </motion.div>
+                  </motion.div>
                 </div>
 
                 {/* Premium edge glow */}
