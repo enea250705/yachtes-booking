@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -102,11 +101,10 @@ const Location: React.FC = () => {
           
           <div className="lg:w-1/2">
             <div className="rounded-lg overflow-hidden shadow-lg h-full">
-              {/* Map image placeholder - Would be replaced with interactive map */}
-              <img 
-                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" 
-                alt="Hotel Location Map" 
-                className="w-full h-full object-cover"
+              <img
+                src="/LEKKER 38-1.jpg"
+                alt="LEKKER Yacht in Beautiful Location"
+                className="w-full h-auto object-cover rounded-lg"
               />
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -7,36 +6,42 @@ const Gallery: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   
-  const images = [
+  const galleryImages = [
     {
-      src: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80',
-      alt: 'Hotel Lobby',
+      id: 1,
+      src: '/LEKKER 45-1.jpg',
+      alt: 'LEKKER 45 Yacht Performance',
+      category: 'Performance'
+    },
+    {
+      id: 2,
+      src: '/lekker 45-2.jpg',
+      alt: 'LEKKER 45 Interior Design',
       category: 'Interior'
     },
     {
-      src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-      alt: 'Deluxe Room',
-      category: 'Rooms'
+      id: 3,
+      src: '/LEKKER 38-1.jpg',
+      alt: 'LEKKER 38 Luxury Yacht',
+      category: 'Luxury'
     },
     {
-      src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80',
-      alt: 'Hotel Pool',
-      category: 'Amenities'
+      id: 4,
+      src: '/LekkerPage-08.png',
+      alt: 'Damsko 750 Performance',
+      category: 'Performance'
     },
     {
-      src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-      alt: 'Executive Suite',
-      category: 'Rooms'
+      id: 5,
+      src: '/LekkerPage-09.png',
+      alt: 'Damsko 750 Design',
+      category: 'Design'
     },
     {
-      src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Restaurant',
-      category: 'Dining'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80',
-      alt: 'Spa',
-      category: 'Amenities'
+      id: 6,
+      src: '/plus6.png',
+      alt: 'EVO Yacht Innovation',
+      category: 'Innovation'
     }
   ];
 
@@ -56,7 +61,7 @@ const Gallery: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-          {images.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <div 
               key={index} 
               className="relative overflow-hidden rounded-lg cursor-pointer group"
