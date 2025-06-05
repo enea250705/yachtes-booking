@@ -1955,7 +1955,7 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       {
         id: '38-grand-sport',
         name: '38 Grand Sport',
-        thumbnail: '/models/technohull/38-grand-sport.jpg',
+        thumbnail: '/38 GRAND SPORT-01.jpg',
         shortDesc: 'A highly competent sport boat offering speeds beyond limits while providing absolute control and comfort, making it the perfect machine for speed enthusiasts.',
         fullDesc: 'The 38 Grand Sport is a highly competent sport boat and a genuine outperformer. Designed to offer speeds beyond limits while providing absolute control to the driver and comfort to passengers, it makes a perfect "machine" for all speed lovers. With an eye-catching, authentic TECHNOHULL design, it offers comforts and amenities that make cruising a pleasurable experience for both the driver and guests. The vessel epitomizes TECHNOHULL\'s DynaStream patented hull technology in all aspects of performance, highlighting the brand\'s technical superiority and performance proficiency. Top speeds, unmatched seakeeping, absolute control, ultimate running comfort, and a refined balance between high performance and user-friendliness define the 38 Grand Sport experience.',
         specs: {
@@ -1974,11 +1974,11 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
           crew: 0
         },
         gallery: [
-          '/models/technohull/38-grand-sport-1.jpg',
-          '/models/technohull/38-grand-sport-2.jpg',
-          '/models/technohull/38-grand-sport-3.jpg',
-          '/models/technohull/38-grand-sport-4.jpg',
-          '/models/technohull/38-grand-sport-5.jpg'
+          '/38 GRAND SPORT-01.jpg',
+          '/38 GRAND SPORT-02.jpg',
+          '/38 GRAND SPORT-03.jpg',
+          '/38 GRAND SPORT-04.jpg',
+          '/38 GRAND SPORT-06.jpg'
         ],
         features: {
           "Technical Specifications": [
@@ -2054,7 +2054,7 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       {
         id: 'omega-47',
         name: 'OMEGA 47',
-        thumbnail: '/models/technohull/omega-47.jpg',
+        thumbnail: '/OMEGA 47-01.jpg',
         shortDesc: 'TECHNOHULL\'s flagship model blending sporty performance with superyacht finish, offering a perfect combination of luxury and power never seen before in its class.',
         fullDesc: 'The OMEGA 47 is TECHNOHULL\'s flagship model. Based on the successful hull of the Omega 45, yet wider and longer, it remains a high-performance sport vessel that seamlessly combines the versatility and performance of a sport boat with the space, comfort, and high-quality details and finishes of a luxury yacht. With a design character genuinely TECHNOHULL, the Omega 47 offers a perfect blend of luxury and power, never seen before in its class. Featuring a Dynastream hull, the Omega 47 exhibits outstanding performance capabilities while navigating in absolute balance, smoothly and dry, effortlessly reaching and maintaining impressive cruising speeds. To further enhance performance, the OMEGA 47 encompasses advanced technology, top quality materials, and state-of-the-art production techniques, making it one of the best-built boats in Europe.',
         specs: {
@@ -2073,11 +2073,11 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
           crew: 0
         },
         gallery: [
-          '/models/technohull/omega-47-1.jpg',
-          '/models/technohull/omega-47-2.jpg',
-          '/models/technohull/omega-47-3.jpg',
-          '/models/technohull/omega-47-4.jpg',
-          '/models/technohull/omega-47-5.jpg'
+          '/OMEGA 47-01.jpg',
+          '/OMEGA 47-06.jpg',
+          '/OMEGA 47-10.jpg',
+          '/OMEGA 47-12.jpg',
+          '/OMEGA 47-16.jpg'
         ],
         features: {
           "Technical Specifications": [

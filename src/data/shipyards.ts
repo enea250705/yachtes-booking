@@ -1247,7 +1247,7 @@ export const shipyardsData: Record<string, ShipyardData> = {
         id: "38-grand-sport",
         name: "38 GRAND SPORT",
         length: "38 ft / 11.1 m",
-        thumbnail: "/LEKKER 38-1.jpg",
+        thumbnail: "/38 GRAND SPORT-01.jpg",
         shortDesc: "High-performance day boat with racing heritage.",
         specs: {
           cabins: "1",
@@ -1276,13 +1276,13 @@ export const shipyardsData: Record<string, ShipyardData> = {
     name: "TECHNOHULL",
     headline: "Performance with Absolute Control",
     description: "Engineering-focused manufacturer known for high-performance RIBs with patented hull technology.",
-    image: "/plus5.png",
+    image: "/38 GRAND SPORT-01.jpg",
     models: [
       {
         id: "38-grand-sport",
         name: "38 GRAND SPORT",
         length: "38 ft / 11.1 m",
-        thumbnail: "/models/technohull/38-grand-sport.jpg",
+        thumbnail: "/38 GRAND SPORT-01.jpg",
         shortDesc: "A highly competent sport boat offering speeds beyond limits while providing absolute control and comfort, making it the perfect machine for speed enthusiasts.",
         specs: {
           cabins: "0",
@@ -1344,7 +1344,7 @@ export const shipyardsData: Record<string, ShipyardData> = {
         id: "omega-47",
         name: "OMEGA 47",
         length: "47 ft / 13.8 m",
-        thumbnail: "/models/technohull/omega-47.jpg",
+        thumbnail: "/OMEGA 47-01.jpg",
         shortDesc: "TECHNOHULL's flagship model blending sporty performance with superyacht finish, offering a perfect combination of luxury and power never seen before in its class.",
         specs: {
           cabins: "1",
