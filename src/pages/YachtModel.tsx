@@ -263,7 +263,15 @@ const YachtModelPage: React.FC = () => {
   const gallery = modelData.gallery || [];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-navy-950 to-navy-900 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-navy-950 to-navy-900 overflow-hidden relative">
+      {/* Luxury Background Pattern */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gold-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-40 right-10 w-40 h-40 bg-gold-400/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-60 right-20 w-28 h-28 bg-gold-400/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-80 left-20 w-36 h-36 bg-gold-400/6 rounded-full blur-3xl"></div>
+      </div>
       <Navbar />
       
       {/* Completely redesigned hero section with enhanced responsiveness */}
