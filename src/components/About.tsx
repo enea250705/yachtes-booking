@@ -194,135 +194,66 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Enhanced Section Header */}
-        <motion.div
-          className="text-center mb-20"
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
-          <motion.div 
-            variants={itemVariants}
-            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-gold-500/10 to-gold-600/10 border border-gold-400/30 rounded-full mb-6 backdrop-blur-sm"
-          >
-            <motion.div 
-              animate={{ rotate: 360 }}
-              transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-            >
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-gold-500/10 to-gold-600/10 border border-gold-400/30 rounded-full mb-6 backdrop-blur-sm">
+            <div>
               <Anchor className="w-5 h-5 text-gold-600" />
-            </motion.div>
+            </div>
             <span className="text-gold-700 font-medium tracking-wider uppercase text-sm">About Excellence</span>
             <Sparkles className="w-4 h-4 text-gold-500" />
-          </motion.div>
+          </div>
           
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight"
-              >
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
             <span className="block">Crafting Maritime</span>
-            <motion.span 
-              className="block bg-gradient-to-r from-gold-600 to-gold-400 bg-clip-text text-transparent"
-              animate={{
-                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
-              }}
-              transition={{
-                duration: 6,
-                ease: "easeInOut",
-                repeat: Infinity
-              }}
-              style={{
-                backgroundSize: "200% 200%"
-              }}
-            >
+            <span className="block bg-gradient-to-r from-gold-600 to-gold-400 bg-clip-text text-transparent">
               Masterpieces
-            </motion.span>
-          </motion.h2>
+            </span>
+          </h2>
           
-          <motion.p
-            variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-          >
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             For over two decades, we've been pushing the boundaries of yacht design and craftsmanship, 
             creating floating works of art that redefine the very essence of luxury.
-          </motion.p>
-              </motion.div>
+          </p>
+        </div>
 
         {/* Enhanced Premium Achievement Grid */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {achievements.map((achievement, index) => (
-            <motion.div
+            <div
               key={index}
               className="group relative"
-              variants={cardVariants}
-              whileHover="hover"
-              onHoverStart={() => setActiveCard(index)}
-              onHoverEnd={() => setActiveCard(null)}
             >
-              <motion.div
-                className="relative p-8 bg-white/80 backdrop-blur-xl rounded-3xl border border-gray-200/50 shadow-xl shadow-black/5 overflow-hidden"
-                style={{ 
-                  transformStyle: "preserve-3d"
-                }}
-              >
+              <div className="relative p-8 bg-white/80 backdrop-blur-xl rounded-3xl border border-gray-200/50 shadow-xl shadow-black/5 overflow-hidden">
                 {/* Premium gradient background */}
-                <motion.div
+                <div
                   className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
                 />
                 
                 {/* Premium icon with 3D effect */}
-                <motion.div 
-                  className="relative z-10 text-center"
-                  animate={activeCard === index ? {
-                    rotateY: [0, 360],
-                    scale: [1, 1.1, 1]
-                  } : {}}
-                  transition={{ duration: 1, ease: "easeInOut" }}
-                >
-                  <motion.div 
-                    className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${achievement.color} rounded-2xl text-white mb-4 shadow-lg`}
-                    whileHover={{ scale: 1.1, rotateY: 180 }}
-                    style={{
-                      transformStyle: "preserve-3d"
-                    }}
-                  >
+                <div className="relative z-10 text-center">
+                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${achievement.color} rounded-2xl text-white mb-4 shadow-lg`}>
                     {achievement.icon}
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
 
-                <motion.div 
-                  className="text-center relative z-10"
-                  animate={activeCard === index ? { y: [-5, 5, -5] } : {}}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  <motion.div
-                    className="text-3xl sm:text-4xl font-bold text-navy-900 mb-2"
-                    animate={{
-                      scale: activeCard === index ? [1, 1.05, 1] : 1
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
+                <div className="text-center relative z-10">
+                  <div className="text-3xl sm:text-4xl font-bold text-navy-900 mb-2">
                     {achievement.number}
-                  </motion.div>
+                  </div>
                   <div className="text-lg font-semibold text-gray-800 mb-2">
                     {achievement.label}
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     {achievement.description}
                   </p>
-          </motion.div>
+                </div>
           
                 {/* Premium hover overlay */}
-          <motion.div 
-                  className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
-                />
-              </motion.div>
-            </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+              </div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

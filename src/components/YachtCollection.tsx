@@ -259,14 +259,10 @@ const YachtCollection: React.FC = () => {
   }, []);
   
   return (
-    <motion.section 
+    <section 
       id="collection" 
       ref={sectionRef}
       className="py-32 relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-navy-900 dark:via-navy-950 dark:to-navy-900"
-      variants={luxuryContainer}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-10%" }}
     >
       {/* Subtle luxury accents */}
       <div className="absolute inset-0 pointer-events-none">
@@ -320,107 +316,47 @@ const YachtCollection: React.FC = () => {
       />
       
       <div className="container mx-auto px-4 max-w-7xl">
-        <motion.div
-          variants={luxuryContainer}
-          className="mb-20"
-        >
-          <motion.div 
-            variants={premiumReveal}
-            className="text-center mb-6"
-          >
-            <motion.span 
-              className="inline-block px-6 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 backdrop-blur-sm border border-gold-300/30 text-gold-700 dark:text-gold-300 rounded-full text-sm font-medium mb-6 relative overflow-hidden"
-              whileHover={{ 
-                scale: 1.05,
-                borderColor: "rgba(212, 175, 55, 0.5)"
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-gold-400/20 to-transparent"
-                variants={shimmerEffect}
-                animate="animate"
-              />
+        <div className="mb-20">
+          <div className="text-center mb-6">
+            <span className="inline-block px-6 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 backdrop-blur-sm border border-gold-300/30 text-gold-700 dark:text-gold-300 rounded-full text-sm font-medium mb-6 relative overflow-hidden">
               <Crown className="inline w-4 h-4 mr-2" />
               Exclusive Fleet
-            </motion.span>
+            </span>
             
-            <motion.h2 
-              className="text-4xl md:text-6xl font-playfair mb-6 text-navy-900 dark:text-white relative inline-block"
-              variants={premiumReveal}
-            >
-              <motion.span
-                initial={{ opacity: 0, y: 50, rotateX: 90 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                style={{ transformOrigin: 'center bottom' }}
-                className="inline-block"
-              >
+            <h2 className="text-4xl md:text-6xl font-playfair mb-6 text-navy-900 dark:text-white relative inline-block">
+              <span className="inline-block">
                 Partner
-              </motion.span>
+              </span>
               {" "}
-              <motion.span
-                initial={{ opacity: 0, y: 50, rotateX: 90 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                style={{ transformOrigin: 'center bottom' }}
-                className="inline-block text-gold-600 dark:text-gold-400"
-              >
+              <span className="inline-block text-gold-600 dark:text-gold-400">
                 Shipyards
-              </motion.span>
-              <motion.span 
-                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-gold-500 to-gold-400 dark:from-gold-400 dark:to-gold-600"
-                initial={{ width: 0, opacity: 0 }}
-                whileInView={{ width: "100%", opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.8, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-              />
-            </motion.h2>
+              </span>
+              <span className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-gold-500 to-gold-400 dark:from-gold-400 dark:to-gold-600 w-full" />
+            </h2>
             
-            <motion.p 
-              className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed"
-              variants={premiumReveal}
-            >
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
               Discover our curated selection of premium yacht shipyards, each renowned for their exceptional craftsmanship and distinctive design philosophy that defines maritime luxury.
-            </motion.p>
-          </motion.div>
-        </motion.div>
+            </p>
+          </div>
+        </div>
         
         {/* Enhanced Desktop Cards View */}
         <div className="hidden md:block">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
             {shipyardCollection.map((shipyard, index) => (
-              <motion.div
+              <div
                 key={shipyard.id}
-                variants={premiumReveal}
-                transition={{ delay: index * 0.1 }}
-                whileHover={magneticHover.hover}
-                onHoverStart={() => setHoveredCard(shipyard.id)}
-                onHoverEnd={() => setHoveredCard(null)}
                 className="group relative cursor-pointer"
               >
                 <Link to={`/shipyard/${shipyard.id}`} className="block">
-                  <motion.div 
-                    className="overflow-hidden rounded-xl shadow-lg bg-white dark:bg-navy-900 border border-gray-100 dark:border-navy-800 h-full relative"
-                    whileHover={{ 
-                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-                      transition: { duration: 0.5 }
-                    }}
-                  >
+                  <div className="overflow-hidden rounded-xl shadow-lg bg-white dark:bg-navy-900 border border-gray-100 dark:border-navy-800 h-full relative hover:shadow-xl transition-shadow duration-300">
                     {/* Image container */}
                     <div className="relative aspect-[4/3] overflow-hidden">
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"
-                        whileHover={{ opacity: [0.6, 0.8] }}
-                        transition={{ duration: 0.5 }}
-                      />
-                      <motion.img 
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                      <img 
                         src={shipyard.thumbnail} 
                         alt={shipyard.name} 
-                        className="w-full h-full object-cover transition-transform duration-700"
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ duration: 0.8 }}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
                         <h3 className="text-2xl font-medium text-white mb-2">{shipyard.name}</h3>
@@ -441,9 +377,9 @@ const YachtCollection: React.FC = () => {
                         </span>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -667,7 +603,7 @@ const YachtCollection: React.FC = () => {
           }
         `
       }} />
-    </motion.section>
+    </section>
   );
 };
 

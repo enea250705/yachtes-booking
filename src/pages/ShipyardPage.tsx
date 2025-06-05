@@ -585,7 +585,7 @@ const ShipyardPage: React.FC = () => {
                       <div className="flex items-center">
                         <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
                         <a href="tel:+18001234567" className="text-blue-100 hover:text-gold-400 transition-colors text-sm sm:text-base">
-                          +1 800 123 4567
+                          
                         </a>
                       </div>
                     </div>
