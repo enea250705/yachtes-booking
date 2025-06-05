@@ -1896,10 +1896,10 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
   },
   "technohull": {
     name: "TECHNOHULL",
-    logo: "https://images.unsplash.com/photo-1590902796242-9d3a2d91dfb0?auto=format&fit=crop&w=600&q=80",
+    logo: "/38 GRAND SPORT-01.jpg",
     description: "Engineering-focused manufacturer known for high-performance RIBs with patented hull technology.",
     fullDescription: "TECHNOHULL creates high-performance luxury RIBs that combine cutting-edge technology with exceptional craftsmanship. Each vessel features the patented Dynastream hull technology, offering superior performance, seakeeping ability, and comfort even at high speeds. With meticulous attention to detail and premium materials, TECHNOHULL vessels represent the perfect balance of performance and luxury.",
-    featuredImage: "https://images.unsplash.com/photo-1590902796242-9d3a2d91dfb0?auto=format&fit=crop&w=600&q=80",
+    featuredImage: "/38 GRAND SPORT-01.jpg",
     established: "2005",
     location: "Greece",
     headquarters: "1st km Lavriou-Souniou Ave., Lavrion, 19500, Greece",
@@ -1917,11 +1917,11 @@ export const shipyardsExtendedData: Record<string, ShipyardDataExtended> = {
       "Excellence in Advanced Hull Design"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1590902796242-9d3a2d91dfb0?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=2044&q=80",
-      "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=2071&q=80",
-      "https://images.unsplash.com/photo-1575986711002-b1e7452c8b17?auto=format&fit=crop&w=2073&q=80"
+      "/38 GRAND SPORT-01.jpg",
+      "/38 GRAND SPORT-02.jpg",
+      "/OMEGA 47-01.jpg",
+      "/OMEGA 47-06.jpg",
+      "/38 GRAND SPORT-03.jpg"
     ],
     story: "TECHNOHULL was founded with a clear mission: to create high-performance vessels that offer exceptional speed without compromising safety or comfort. Drawing on extensive naval architecture expertise and a passion for engineering excellence, the company developed its patented Dynastream hull technology after years of research and testing.\n\nThis innovative hull design technology is based on sophisticated computer programs and hull structure algorithms, allowing TECHNOHULL to optimize each vessel's hydrodynamic profile. The result is a range of boats that offer top-notch performance, excellent seakeeping abilities, and smooth riding even in challenging conditions.\n\nToday, TECHNOHULL continues to push the boundaries of marine engineering, employing the latest technologies and construction techniques to create vessels that represent the perfect balance between high performance and user-friendliness.",
     values: [
